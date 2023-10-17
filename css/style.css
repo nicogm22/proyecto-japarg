@@ -86,3 +86,60 @@ footer div {
 .redessociales a {
     margin: 0 0.5rem;
 }
+
+
+.portadajapanshop {
+    padding: 0.5rem;
+}
+
+.portadajapanshop img {
+    border-radius: 7px;
+}
+
+.somos-japanshop {
+    text-align: center;
+}
+
+.somos-japanshop p {
+    text-align: start;
+}
+
+.botonunetenos {
+    background-color: rgb(122, 23, 23);
+    padding: 1rem;
+    border-radius: 7px;
+    color: rgb(240, 230, 230);
+}
+
+.portadasecundaria {
+    margin: 1.2rem 0rem;
+    margin-top: 2rem;
+    border-top: 1px solid black;
+    padding-top: 2rem;
+}
+
+.novedades {
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.noveimagenes {
+    text-align: center;
+    align-items: center;
+}
+
+.noveimagenes p {
+    margin: 0;
+}
+
+.noveimagenes div {
+    margin-bottom: 2.5rem;
+}
+
+.contenedor {
+    border: 1px solid black;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+
+}
