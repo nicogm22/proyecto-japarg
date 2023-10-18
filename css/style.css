@@ -94,6 +94,8 @@ footer div {
 
 .portadajapanshop img {
     border-radius: 7px;
+    max-height: 800px;
+    width: 100%;
 }
 
 .somos-japanshop {
@@ -142,4 +144,90 @@ footer div {
     padding: 0.5rem;
     border-radius: 5px;
 
+}
+
+.contenedor:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+}
+
+.nodisplayproducto {
+    display: none;
+}
+
+@media (min-width: 768px) {
+
+    /* Columnas de productos en index */
+    .portadasecundaria {
+        display: flex;
+        justify-content: center;
+    }
+
+    .nodisplayproducto {
+        display: block;
+    }
+
+    .noveimagenes {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        gap: 0.5rem;
+    }
+
+    .noveimagenes img {
+        max-width: 200px;
+        max-height: 200px;
+    }
+
+    .contenedor {
+        width: fit-content;
+        padding: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    /* Footer */
+
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: space-between;
+        align-items: end;
+    }
+
+    .politicas {
+        grid-column: 1;
+        grid-row: 1;
+        align-self: end;
+    }
+
+    footer :nth-child(1) {
+        grid-column: 2;
+        grid-row: 1;
+        justify-self: center;
+    }
+
+    .redessociales {
+        grid-column: 3;
+        grid-row: 1;
+        justify-self: end;
+    }
+
+    .logodelfooter {
+        max-width: 48px;
+        max-height: 48px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .noveimagenes {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 1600px) {
+    .noveimagenes {
+        grid-template-columns: repeat(6, 1fr);
+    }
 }
