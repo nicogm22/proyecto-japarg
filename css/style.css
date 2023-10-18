@@ -383,6 +383,43 @@ footer div {
 
 }
 
+/* Pagina Sobre nosotros... */
+
+.sobrenosotros div {
+    border: 2px solid rgb(150, 29, 29);
+    border-radius: 1rem;
+    margin: 2rem;
+    padding: 0.5rem;
+}
+
+/* Pagina de Contacto */
+
+.contacto {
+    border: 2px solid rgb(150, 29, 29);
+    border-radius: 1rem;
+    margin: 2rem;
+    padding: 0.5rem;
+}
+
+.contacto img {
+    max-width: 48px;
+    max-height: 48px;
+}
+
+.contacto p {
+    font-size: medium;
+
+}
+
+/* Pagina "Nuestra Tienda Fisica" */
+
+.tiendafisica {
+    border: 2px solid rgb(150, 29, 29);
+    border-radius: 1rem;
+    margin: 2rem;
+    padding: 0.5rem;
+}
+
 @media (min-width: 1200px) {
     .noveimagenes {
         grid-template-columns: 1fr 1fr 1fr;
