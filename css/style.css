@@ -4,12 +4,6 @@
     box-sizing: border-box;
 }
 
-/* @media only screen and (max-width: 400px)  {
-    body {
-        background-color: aqua;
-    }
-} */
-
 body {
     font-family: 'Roboto', sans-serif;
 }
@@ -45,14 +39,6 @@ img {
     background-color: rgb(122, 23, 23);
     border-color: black;
 }
-
-/* header nav ul li a:hover {
-    background-color: rgb(236, 226, 226);
-    border-radius: 10px;
-    width: fit-content;
-    padding: 0.1rem;
-} 
- ver despues el error */
 
 /* Footer */
 
@@ -155,7 +141,129 @@ footer div {
     display: none;
 }
 
+.filtroducto {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: start;
+    background-color: rgb(255, 235, 213);
+    width: 100%;
+}
+
+.ropaproducto {
+    padding: 0.1rem;
+    width: 7rem;
+}
+
+.figuraproducto {
+    width: 7rem;
+}
+
+.pelucheproducto {
+    width: 7rem;
+}
+
+.accesoriosproducto {
+    width: 7rem;
+}
+
+.comidaproducto {
+    width: 7rem;
+}
+
+.bebidaproducto {
+    width: 7rem;
+}
+
+.ropaproducto:hover {
+    background-color: rgb(129, 55, 55);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.figuraproducto:hover {
+    background-color: rgb(129, 55, 55);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.pelucheproducto:hover {
+    background-color: rgb(129, 55, 55);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.accesoriosproducto:hover {
+    background-color: rgb(129, 55, 55);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.comidaproducto:hover {
+    background-color: rgb(129, 55, 55);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.bebidaproducto:hover {
+    background-color: rgb(129, 55, 55);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.tendencias h2 {
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.tendenciasmarco {
+    border: 1px solid black;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.tendenciasmarco:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+}
+
+.ofertas h2 {
+    padding: 0.5rem;
+    text-align: center;
+    margin: 0.5rem;
+}
+
+.ofertasmarco {
+    border: 1px solid black;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    text-align: center;
+}
+
+
 @media (min-width: 768px) {
+
+    /* Header */
+    header {
+        box-shadow: 0.25vh 0.25vh 0.5vh #888
+    }
+
+    header nav ul {
+        padding: 0.2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        gap: 1.8rem;
+    }
+
+    header nav ul li:hover {
+        background-color: rgb(236, 226, 226);
+        border-radius: 10px;
+    }
 
     /* Columnas de productos en index */
     .portadasecundaria {
@@ -172,6 +280,7 @@ footer div {
         grid-template-columns: 50% 50%;
         gap: 0.5rem;
     }
+
 
     .noveimagenes img {
         max-width: 200px;
@@ -218,16 +327,86 @@ footer div {
         max-width: 48px;
         max-height: 48px;
     }
+
+    /* Pagina productos */
+
+    .filtroducto {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 0.4rem;
+        width: 100%;
+    }
+
+    /* elementos oferta y tendencias */
+    .tendenciasconimg {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        gap: 0.5rem;
+    }
+
+    .tendenciasmarco {
+        width: fit-content;
+        padding: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 2rem auto;
+    }
+
+    .tendenciasmarco img {
+        max-width: 200px;
+        max-height: 200px;
+    }
+
+    .ofertasmarco img {
+        max-width: 200px;
+        max-height: 200px;
+    }
+
+    .ofertasconimg {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        gap: 0.5rem;
+    }
+
+    .ofertasmarco {
+        width: fit-content;
+        padding: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 2rem auto;
+        gap: 2rem;
+    }
+
 }
 
 @media (min-width: 1200px) {
     .noveimagenes {
         grid-template-columns: 1fr 1fr 1fr;
     }
+
+    .ofertasconimg {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .tendenciasconimg {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }
 
 @media (min-width: 1600px) {
     .noveimagenes {
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    .ofertasconimg {
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    .tendenciasconimg {
         grid-template-columns: repeat(6, 1fr);
     }
 }
