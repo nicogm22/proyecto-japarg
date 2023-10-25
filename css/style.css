@@ -144,71 +144,21 @@ footer div {
 .filtroducto {
     display: flex;
     flex-direction: column;
-    align-items: baseline;
-    justify-content: start;
+    gap: 1.5rem;
     background-color: rgb(255, 235, 213);
     width: 100%;
+    padding: 1rem;
 }
 
-.ropaproducto {
-    padding: 0.1rem;
-    width: 7rem;
+.filtroducto li a {
+    font-weight: 700;
+    padding: .5rem;
 }
 
-.figuraproducto {
-    width: 7rem;
-}
-
-.pelucheproducto {
-    width: 7rem;
-}
-
-.accesoriosproducto {
-    width: 7rem;
-}
-
-.comidaproducto {
-    width: 7rem;
-}
-
-.bebidaproducto {
-    width: 7rem;
-}
-
-.ropaproducto:hover {
+.filtroducto li a:hover {
     background-color: rgb(129, 55, 55);
     border-radius: 10px;
-    cursor: pointer;
-}
-
-.figuraproducto:hover {
-    background-color: rgb(129, 55, 55);
-    border-radius: 10px;
-    cursor: pointer;
-}
-
-.pelucheproducto:hover {
-    background-color: rgb(129, 55, 55);
-    border-radius: 10px;
-    cursor: pointer;
-}
-
-.accesoriosproducto:hover {
-    background-color: rgb(129, 55, 55);
-    border-radius: 10px;
-    cursor: pointer;
-}
-
-.comidaproducto:hover {
-    background-color: rgb(129, 55, 55);
-    border-radius: 10px;
-    cursor: pointer;
-}
-
-.bebidaproducto:hover {
-    background-color: rgb(129, 55, 55);
-    border-radius: 10px;
-    cursor: pointer;
+    color: white;
 }
 
 .tendencias h2 {
@@ -242,6 +192,12 @@ footer div {
     border-radius: 5px;
     text-align: center;
 }
+
+.ofertasmarco:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+}
+
 
 
 @media (min-width: 768px) {
@@ -389,7 +345,19 @@ footer div {
     border: 2px solid rgb(150, 29, 29);
     border-radius: 1rem;
     margin: 2rem;
+    margin-top: 0;
     padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.sobrenosotros h2 {
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+.sobrenosotros img {
+    align-self: center;
 }
 
 /* Pagina de Contacto */
@@ -418,6 +386,22 @@ footer div {
     border-radius: 1rem;
     margin: 2rem;
     padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.tiendafisica h2,
+.tiendafisica img,
+.tiendafisica p,
+.tiendafisica iframe {
+    padding: .5rem;
+    margin-bottom: .3rem;
+}
+
+.tiendafisica iframe {
+    max-width: 400px;
+    max-height: 100%;
+    margin: 0 auto;
 }
 
 @media (min-width: 1200px) {
