@@ -1,0 +1,433 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* Header */
+
+.colorheaderdiv1 {
+    background-color: rgb(122, 23, 23);
+    font-weight: 500;
+}
+
+.botonbusqueda {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border-color: black;
+}
+
+.botonbusqueda:hover {
+    background-color: rgb(122, 23, 23);
+    border-color: black;
+}
+
+/* Footer */
+
+footer {
+    background-color: rgb(104, 68, 68);
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+footer img {
+    max-width: 36px;
+    max-height: 36px;
+}
+
+footer div {
+    padding: 0.55rem;
+}
+
+.politicas {
+    display: flex;
+    flex-direction: column;
+}
+
+.politicas a {
+    color: rgb(214, 202, 202);
+}
+
+.redessociales a {
+    margin: 0 0.5rem;
+}
+
+
+.portadajapanshop {
+    padding: 0.5rem;
+}
+
+.portadajapanshop img {
+    border-radius: 7px;
+    max-height: 800px;
+    width: 100%;
+}
+
+.somos-japanshop {
+    text-align: center;
+}
+
+.somos-japanshop p {
+    text-align: start;
+}
+
+.botonunetenos {
+    background-color: rgb(122, 23, 23);
+    padding: 1rem;
+    border-radius: 7px;
+    color: rgb(240, 230, 230);
+}
+
+.portadasecundaria {
+    margin: 1.2rem 0rem;
+    margin-top: 2rem;
+    border-top: 1px solid black;
+    padding-top: 2rem;
+}
+
+.novedades {
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.noveimagenes {
+    text-align: center;
+    align-items: center;
+}
+
+.noveimagenes p {
+    margin: 0;
+}
+
+.noveimagenes div {
+    margin-bottom: 2.5rem;
+}
+
+.contenedor {
+    border: 1px solid black;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+
+}
+
+.contenedor:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+}
+
+.nodisplayproducto {
+    display: none;
+}
+
+.filtroducto {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    background-color: rgb(255, 235, 213);
+    width: 100%;
+    padding: 1rem;
+}
+
+.filtroducto li a {
+    font-weight: 700;
+    padding: .5rem;
+}
+
+.filtroducto li a:hover {
+    background-color: rgb(129, 55, 55);
+    border-radius: 10px;
+    color: white;
+}
+
+.tendencias h2 {
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.tendenciasmarco {
+    border: 1px solid black;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.tendenciasmarco:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+}
+
+.ofertas h2 {
+    padding: 0.5rem;
+    text-align: center;
+    margin: 0.5rem;
+}
+
+.ofertasmarco {
+    border: 1px solid black;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.ofertasmarco:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+}
+
+
+
+@media (min-width: 768px) {
+
+    /* Header */
+    header {
+        box-shadow: 0.25vh 0.25vh 0.5vh #888
+    }
+
+    header nav ul {
+        padding: 0.2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        gap: 1.8rem;
+    }
+
+    header nav ul li:hover {
+        background-color: rgb(236, 226, 226);
+        border-radius: 10px;
+    }
+
+    /* Columnas de productos en index */
+    .portadasecundaria {
+        display: flex;
+        justify-content: center;
+    }
+
+    .nodisplayproducto {
+        display: block;
+    }
+
+    .noveimagenes {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        gap: 0.5rem;
+    }
+
+
+    .noveimagenes img {
+        max-width: 200px;
+        max-height: 200px;
+    }
+
+    .contenedor {
+        width: fit-content;
+        padding: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    /* Footer */
+
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: space-between;
+        align-items: end;
+    }
+
+    .politicas {
+        grid-column: 1;
+        grid-row: 1;
+        align-self: end;
+    }
+
+    footer :nth-child(1) {
+        grid-column: 2;
+        grid-row: 1;
+        justify-self: center;
+    }
+
+    .redessociales {
+        grid-column: 3;
+        grid-row: 1;
+        justify-self: end;
+    }
+
+    .logodelfooter {
+        max-width: 48px;
+        max-height: 48px;
+    }
+
+    /* Pagina productos */
+
+    .filtroducto {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 0.4rem;
+        width: 100%;
+    }
+
+    /* elementos oferta y tendencias */
+    .tendenciasconimg {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        gap: 0.5rem;
+    }
+
+    .tendenciasmarco {
+        width: fit-content;
+        padding: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 2rem auto;
+    }
+
+    .tendenciasmarco img {
+        max-width: 200px;
+        max-height: 200px;
+    }
+
+    .ofertasmarco img {
+        max-width: 200px;
+        max-height: 200px;
+    }
+
+    .ofertasconimg {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        gap: 0.5rem;
+    }
+
+    .ofertasmarco {
+        width: fit-content;
+        padding: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 2rem auto;
+        gap: 2rem;
+    }
+
+}
+
+/* Pagina Sobre nosotros... */
+
+.sobrenosotros div {
+    border: 2px solid rgb(150, 29, 29);
+    border-radius: 1rem;
+    margin: 2rem;
+    margin-top: 0;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.sobrenosotros h2 {
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+.sobrenosotros img {
+    align-self: center;
+}
+
+/* Pagina de Contacto */
+
+.contacto {
+    border: 2px solid rgb(150, 29, 29);
+    border-radius: 1rem;
+    margin: 2rem;
+    padding: 0.5rem;
+}
+
+.contacto img {
+    max-width: 48px;
+    max-height: 48px;
+}
+
+.contacto p {
+    font-size: medium;
+
+}
+
+/* Pagina "Nuestra Tienda Fisica" */
+
+.tiendafisica {
+    border: 2px solid rgb(150, 29, 29);
+    border-radius: 1rem;
+    margin: 2rem;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.tiendafisica h2,
+.tiendafisica img,
+.tiendafisica p,
+.tiendafisica iframe {
+    padding: .5rem;
+    margin-bottom: .3rem;
+}
+
+.tiendafisica iframe {
+    max-width: 400px;
+    max-height: 100%;
+    margin: 0 auto;
+}
+
+@media (min-width: 1200px) {
+    .noveimagenes {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .ofertasconimg {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .tendenciasconimg {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 1600px) {
+    .noveimagenes {
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    .ofertasconimg {
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    .tendenciasconimg {
+        grid-template-columns: repeat(6, 1fr);
+    }
+}

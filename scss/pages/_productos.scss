@@ -1,0 +1,111 @@
+.filtroducto {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  background-color: rgb(255, 235, 213);
+  width: 100%;
+  padding: 1rem;
+}
+
+.filtroducto li a {
+  font-weight: 700;
+  padding: 0.5rem;
+}
+
+.filtroducto li a:hover {
+  background-color: rgb(129, 55, 55);
+  border-radius: 10px;
+  color: white;
+}
+
+.tendencias h2 {
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.tendenciasmarco {
+  border: 1px solid black;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.tendenciasmarco:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  cursor: pointer;
+}
+
+.ofertas h2 {
+  padding: 0.5rem;
+  text-align: center;
+  margin: 0.5rem;
+}
+
+.ofertasmarco {
+  border: 1px solid black;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.ofertasmarco:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+
+  /* Pagina productos */
+  .filtroducto {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0.4rem;
+    width: 100%;
+  }
+
+  /* elementos oferta y tendencias */
+  .tendenciasconimg {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 0.5rem;
+  }
+
+  .tendenciasmarco {
+    width: fit-content;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 2rem auto;
+  }
+
+  .tendenciasmarco img {
+    max-width: 200px;
+    max-height: 200px;
+  }
+
+  .ofertasmarco img {
+    max-width: 200px;
+    max-height: 200px;
+  }
+
+  .ofertasconimg {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 0.5rem;
+  }
+
+  .ofertasmarco {
+    width: fit-content;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 2rem auto;
+    gap: 2rem;
+  }
+}
