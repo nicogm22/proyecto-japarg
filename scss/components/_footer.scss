@@ -4,25 +4,26 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
 
-footer img {
-  max-width: 36px;
-  max-height: 36px;
-}
+  & img {
+    max-width: 36px;
+    max-height: 36px;
+  }
 
-footer div {
-  padding: 0.55rem;
+  & div {
+    padding: 0.55rem;
+  }
 }
 
 .politicas {
   display: flex;
   flex-direction: column;
+
+  & a {
+    color: rgb(214, 202, 202);
+  }
 }
 
-.politicas a {
-  color: rgb(214, 202, 202);
-}
 
 .redessociales a {
   margin: 0 0.5rem;
@@ -30,7 +31,6 @@ footer div {
 
 @media (min-width: 768px) {
 
-  /* Footer */
   footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -38,16 +38,16 @@ footer div {
     align-items: end;
   }
 
-  .politicas {
-    grid-column: 1;
-    grid-row: 1;
-    align-self: end;
-  }
-
   footer :nth-child(1) {
     grid-column: 2;
     grid-row: 1;
     justify-self: center;
+  }
+
+  .politicas {
+    grid-column: 1;
+    grid-row: 1;
+    align-self: end;
   }
 
   .redessociales {
