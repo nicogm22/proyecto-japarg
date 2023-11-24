@@ -5,6 +5,12 @@
   padding: 0.5rem;
   display: flex;
   flex-direction: column;
+
+  & iframe {
+    max-width: 400px;
+    max-height: 100%;
+    margin: 0 auto;
+  }
 }
 
 .tiendafisica h2,
@@ -13,10 +19,4 @@
 .tiendafisica iframe {
   padding: 0.5rem;
   margin-bottom: 0.3rem;
-}
-
-.tiendafisica iframe {
-  max-width: 400px;
-  max-height: 100%;
-  margin: 0 auto;
 }

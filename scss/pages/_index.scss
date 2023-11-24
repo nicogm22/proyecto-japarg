@@ -1,26 +1,34 @@
 .portadajapanshop {
   padding: 0.5rem;
+
+  & img {
+    border-radius: 7px;
+    max-height: 800px;
+    width: 100%;
+  }
 }
 
-.portadajapanshop img {
-  border-radius: 7px;
-  max-height: 800px;
-  width: 100%;
-}
 
 .somos-japanshop {
   text-align: center;
+
+  & p {
+    text-align: start;
+  }
 }
 
-.somos-japanshop p {
-  text-align: start;
-}
 
-.botonunetenos {
+.botoncontactenos {
   background-color: rgb(122, 23, 23);
   padding: 1rem;
   border-radius: 7px;
   color: rgb(240, 230, 230);
+  transition: .5s ease;
+
+  &:hover {
+    color: rgb(196, 52, 52);
+    background-color: black;
+  }
 }
 
 .portadasecundaria {
@@ -28,99 +36,46 @@
   margin-top: 2rem;
   border-top: 1px solid black;
   padding-top: 2rem;
+
+  @include mq-md {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .novedades {
   padding: 0.5rem;
   text-align: center;
-}
 
-.noveimagenes {
-  text-align: center;
-  align-items: center;
-}
+  &Imagenes {
+    text-align: center;
+    align-items: center;
 
-.noveimagenes p {
-  margin: 0;
-}
+    & p {
+      margin: 0;
+    }
 
-.noveimagenes div {
-  margin-bottom: 2.5rem;
-}
+    & div {
+      margin-bottom: 2.5rem;
+    }
 
-.contenedor {
-  border: 1px solid black;
-  margin: 0.5rem;
-  padding: 0.5rem;
-  border-radius: 5px;
-}
+    @include mq-md {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      gap: 0.5rem;
 
-.contenedor:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  cursor: pointer;
-}
+      & img {
+        max-width: 200px;
+        max-height: 200px;
+      }
+    }
 
-.nodisplayproducto {
-  display: none;
-}
+    @include mq-xl {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
 
-@media (min-width: 768px) {
-
-  /* Columnas de productos en index */
-  .portadasecundaria {
-    display: flex;
-    justify-content: center;
-  }
-
-  .nodisplayproducto {
-    display: block;
-  }
-
-  .noveimagenes {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    gap: 0.5rem;
-  }
-
-  .noveimagenes img {
-    max-width: 200px;
-    max-height: 200px;
-  }
-
-  .contenedor {
-    width: fit-content;
-    padding: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 0 auto;
-  }
-}
-
-@media (min-width: 1200px) {
-  .noveimagenes {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-
-  .ofertasconimg {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-
-  .tendenciasconimg {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-}
-
-@media (min-width: 1600px) {
-  .noveimagenes {
-    grid-template-columns: repeat(6, 1fr);
-  }
-
-  .ofertasconimg {
-    grid-template-columns: repeat(6, 1fr);
-  }
-
-  .tendenciasconimg {
-    grid-template-columns: repeat(6, 1fr);
+    @include mq-xxl {
+      grid-template-columns: repeat(6, 1fr);
+    }
   }
 }

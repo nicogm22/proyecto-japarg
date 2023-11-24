@@ -4,6 +4,37 @@
   box-sizing: border-box;
 }
 
+@mixin mq-md {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin mq-xl {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin mq-xxl {
+  @media (min-width: 1600px) {
+    @content;
+  }
+}
+
+@mixin contenedor-productos {
+  border: 1px solid black;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 5px;
+  text-align: center;
+
+  &:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+  }
+}
+
 body {
   font-family: 'Roboto', sans-serif;
 }
@@ -20,4 +51,13 @@ ol {
 
 img {
   max-width: 100%;
+  object-fit: cover;
+}
+
+.nodisplayproducto {
+  display: none;
+
+  @include mq-md {
+    display: block;
+  }
 }

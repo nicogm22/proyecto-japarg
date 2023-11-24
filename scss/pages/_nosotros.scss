@@ -1,18 +1,22 @@
-.sobrenosotros div {
-  border: 2px solid rgb(150, 29, 29);
-  border-radius: 1rem;
-  margin: 2rem;
-  margin-top: 0;
-  padding: 0.5rem;
-  display: flex;
-  flex-direction: column;
-}
+.sobrenosotros {
 
-.sobrenosotros h2 {
-  padding: 1rem;
-  margin-top: 1rem;
-}
 
-.sobrenosotros img {
-  align-self: center;
+  & div {
+    border: 2px solid rgb(150, 29, 29);
+    border-radius: 1rem;
+    margin: 2rem;
+    margin-top: 0;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  & h2 {
+    padding: 1rem;
+    margin-top: 1rem;
+  }
+
+  & img {
+    align-self: center;
+  }
 }

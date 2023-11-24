@@ -3,13 +3,14 @@
   border-radius: 1rem;
   margin: 2rem;
   padding: 0.5rem;
-}
 
-.contacto img {
-  max-width: 48px;
-  max-height: 48px;
-}
+  & img {
+    max-width: 48px;
+    max-height: 48px;
+  }
 
-.contacto p {
-  font-size: medium;
+  & p {
+    font-size: medium;
+  }
+
 }

@@ -1,111 +1,128 @@
 .filtroducto {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
   background-color: rgb(255, 235, 213);
-  width: 100%;
-  padding: 1rem;
-}
+  padding: .3rem;
+  max-width: 100%;
 
-.filtroducto li a {
-  font-weight: 700;
-  padding: 0.5rem;
-}
+  &-ul {
+    margin-bottom: .2rem;
+    padding-left: 0;
 
-.filtroducto li a:hover {
-  background-color: rgb(129, 55, 55);
-  border-radius: 10px;
-  color: white;
-}
-
-.tendencias h2 {
-  padding: 0.5rem;
-  text-align: center;
-}
-
-.tendenciasmarco {
-  border: 1px solid black;
-  margin: 0.5rem;
-  padding: 0.5rem;
-  border-radius: 5px;
-  text-align: center;
-}
-
-.tendenciasmarco:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  cursor: pointer;
-}
-
-.ofertas h2 {
-  padding: 0.5rem;
-  text-align: center;
-  margin: 0.5rem;
-}
-
-.ofertasmarco {
-  border: 1px solid black;
-  margin: 0.5rem;
-  padding: 0.5rem;
-  border-radius: 5px;
-  text-align: center;
-}
-
-.ofertasmarco:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  cursor: pointer;
-}
-
-@media (min-width: 768px) {
-
-  /* Pagina productos */
-  .filtroducto {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    padding: 0.4rem;
-    width: 100%;
+    @include mq-md {
+      display: flex;
+      justify-content: center;
+      align-items: end;
+      gap: .5rem;
+      height: 2.3rem;
+    }
   }
 
-  /* elementos oferta y tendencias */
-  .tendenciasconimg {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    gap: 0.5rem;
+  & li {
+
+    margin-bottom: .3rem;
+
+    & a {
+      font-weight: 600;
+      padding: 0.4rem;
+
+      &:hover {
+        background-color: rgb(129, 55, 55);
+        border-radius: 10px;
+        color: white;
+      }
+    }
   }
 
-  .tendenciasmarco {
-    width: fit-content;
-    padding: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 2rem auto;
+
+}
+
+.tendencias {
+
+  & h2 {
+    padding: 0.5rem;
+    text-align: center;
   }
 
-  .tendenciasmarco img {
-    max-width: 200px;
-    max-height: 200px;
+  &Marco {
+    @include contenedor-productos;
+
+    @include mq-md {
+      width: fit-content;
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin: 2rem auto;
+    }
+
+    & img {
+      @include mq-md {
+        max-width: 200px;
+        max-height: 200px;
+      }
+    }
   }
 
-  .ofertasmarco img {
-    max-width: 200px;
-    max-height: 200px;
+  &ConImg {
+    @include mq-md {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      gap: 0.5rem;
+    }
+
+    @include mq-xl {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    @include mq-xxl {
+      grid-template-columns: repeat(6, 1fr);
+    }
+  }
+}
+
+.ofertas {
+  & h2 {
+    padding: 0.5rem;
+    text-align: center;
+    margin: 0.5rem;
   }
 
-  .ofertasconimg {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    gap: 0.5rem;
+  &Marco {
+    @include contenedor-productos;
+
+    @include mq-md {
+      width: fit-content;
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin: 2rem auto;
+      gap: 2rem;
+    }
+
+    & img {
+      @include mq-md {
+        max-width: 200px;
+        max-height: 200px;
+      }
+    }
   }
 
-  .ofertasmarco {
-    width: fit-content;
-    padding: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 2rem auto;
-    gap: 2rem;
+  &ConImg {
+
+    @include mq-md {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      gap: 0.5rem;
+    }
+
+    @include mq-xl {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    @include mq-xxl {
+      grid-template-columns: repeat(6, 1fr);
+    }
   }
 }
