@@ -367,7 +367,7 @@ footer div {
 .tiendafisica {
   border: 2px solid rgb(150, 29, 29);
   border-radius: 1rem;
-  margin: 8rem;
+  margin: 2rem;
   padding: 0.5rem;
   display: flex;
   flex-direction: column;
@@ -378,8 +378,7 @@ footer div {
   margin: 0 auto;
 }
 .tiendafisica p {
-  line-height: 1.5rem;
-  width: 100%;
+  line-height: 1rem;
 }
 .tiendafisica h2 {
   text-align: center;
@@ -396,7 +395,7 @@ footer div {
 .sobrenosotros div {
   border: 2px solid rgb(150, 29, 29);
   border-radius: 1rem;
-  margin: 8rem;
+  margin: 2rem;
   margin-top: 0;
   padding: 0.5rem;
   display: flex;
@@ -409,9 +408,8 @@ footer div {
 .sobrenosotros img {
   align-self: center;
 }
-.sobrenosotros div p {
-  line-height: 3rem;
-  width: 100%;
+.sobrenosotros p {
+  line-height: 2rem;
 }
 
 .contacto {
@@ -428,4 +426,4 @@ footer div {
   font-size: medium;
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css01~.map */
