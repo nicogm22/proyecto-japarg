@@ -11,6 +11,12 @@
 
 .somos-japanshop {
   text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
 
   & p {
     text-align: start;

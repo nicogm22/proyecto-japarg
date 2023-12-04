@@ -26,11 +26,14 @@ img {
 .nodisplayproducto {
   display: none;
 }
-
 @media (min-width: 768px) {
   .nodisplayproducto {
     display: block;
   }
+}
+
+.container1200 {
+  max-width: 1200px;
 }
 
 footer {
@@ -40,12 +43,10 @@ footer {
   flex-direction: column;
   align-items: center;
 }
-
 footer img {
   max-width: 36px;
   max-height: 36px;
 }
-
 footer div {
   padding: 0.55rem;
 }
@@ -54,7 +55,6 @@ footer div {
   display: flex;
   flex-direction: column;
 }
-
 .politicas a {
   color: rgb(214, 202, 202);
 }
@@ -70,31 +70,26 @@ footer div {
     justify-content: space-between;
     align-items: end;
   }
-
   footer :nth-child(1) {
     grid-column: 2;
     grid-row: 1;
     justify-self: center;
   }
-
   .politicas {
     grid-column: 1;
     grid-row: 1;
     align-self: end;
   }
-
   .redessociales {
     grid-column: 3;
     grid-row: 1;
     justify-self: end;
   }
-
   .logodelfooter {
     max-width: 48px;
     max-height: 48px;
   }
 }
-
 .colorheaderdiv1 {
   background-color: rgb(122, 23, 23);
   font-weight: 500;
@@ -105,7 +100,6 @@ footer div {
   color: rgb(0, 0, 0);
   border-color: black;
 }
-
 .botonbusqueda:hover {
   background-color: rgb(122, 23, 23);
   border-color: black;
@@ -120,7 +114,6 @@ footer div {
   header {
     box-shadow: 0.25vh 0.25vh 0.5vh #888;
   }
-
   header nav ul {
     padding: 0.2rem;
     display: flex;
@@ -129,25 +122,21 @@ footer div {
     width: 100%;
     gap: 1.8rem;
   }
-
   header nav ul li:hover {
     background-color: rgb(236, 226, 226);
     border-radius: 10px;
   }
 }
-
 .contenedor {
   border: 1px solid black;
   margin: 0.5rem;
   padding: 0.5rem;
   border-radius: 5px;
 }
-
 .contenedor:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   cursor: pointer;
 }
-
 @media (min-width: 768px) {
   .contenedor {
     width: fit-content;
@@ -162,7 +151,6 @@ footer div {
 .portadajapanshop {
   padding: 0.5rem;
 }
-
 .portadajapanshop img {
   border-radius: 7px;
   max-height: 800px;
@@ -171,8 +159,13 @@ footer div {
 
 .somos-japanshop {
   text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
 }
-
 .somos-japanshop p {
   text-align: start;
 }
@@ -184,7 +177,6 @@ footer div {
   color: rgb(240, 230, 230);
   transition: 0.5s ease;
 }
-
 .botoncontactenos:hover {
   color: rgb(196, 52, 52);
   background-color: black;
@@ -196,7 +188,6 @@ footer div {
   border-top: 1px solid black;
   padding-top: 2rem;
 }
-
 @media (min-width: 768px) {
   .portadasecundaria {
     display: flex;
@@ -208,39 +199,32 @@ footer div {
   padding: 0.5rem;
   text-align: center;
 }
-
 .novedadesImagenes {
   text-align: center;
   align-items: center;
 }
-
 .novedadesImagenes p {
   margin: 0;
 }
-
 .novedadesImagenes div {
   margin-bottom: 2.5rem;
 }
-
 @media (min-width: 768px) {
   .novedadesImagenes {
     display: grid;
     grid-template-columns: 50% 50%;
     gap: 0.5rem;
   }
-
   .novedadesImagenes img {
     max-width: 200px;
     max-height: 200px;
   }
 }
-
 @media (min-width: 1200px) {
   .novedadesImagenes {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
-
 @media (min-width: 1600px) {
   .novedadesImagenes {
     grid-template-columns: repeat(6, 1fr);
@@ -254,12 +238,10 @@ footer div {
   padding: 0.3rem;
   max-width: 100%;
 }
-
 .filtroducto-ul {
   margin-bottom: 0.2rem;
   padding-left: 0;
 }
-
 @media (min-width: 768px) {
   .filtroducto-ul {
     display: flex;
@@ -269,16 +251,13 @@ footer div {
     height: 2.3rem;
   }
 }
-
 .filtroducto li {
   margin-bottom: 0.3rem;
 }
-
 .filtroducto li a {
   font-weight: 600;
   padding: 0.4rem;
 }
-
 .filtroducto li a:hover {
   background-color: rgb(129, 55, 55);
   border-radius: 10px;
@@ -289,7 +268,6 @@ footer div {
   padding: 0.5rem;
   text-align: center;
 }
-
 .tendenciasMarco {
   border: 1px solid black;
   margin: 0.5rem;
@@ -297,12 +275,10 @@ footer div {
   border-radius: 5px;
   text-align: center;
 }
-
 .tendenciasMarco:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   cursor: pointer;
 }
-
 @media (min-width: 768px) {
   .tendenciasMarco {
     width: fit-content;
@@ -313,14 +289,12 @@ footer div {
     margin: 2rem auto;
   }
 }
-
 @media (min-width: 768px) {
   .tendenciasMarco img {
     max-width: 200px;
     max-height: 200px;
   }
 }
-
 @media (min-width: 768px) {
   .tendenciasConImg {
     display: grid;
@@ -328,13 +302,11 @@ footer div {
     gap: 0.5rem;
   }
 }
-
 @media (min-width: 1200px) {
   .tendenciasConImg {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
-
 @media (min-width: 1600px) {
   .tendenciasConImg {
     grid-template-columns: repeat(6, 1fr);
@@ -346,7 +318,6 @@ footer div {
   text-align: center;
   margin: 0.5rem;
 }
-
 .ofertasMarco {
   border: 1px solid black;
   margin: 0.5rem;
@@ -354,12 +325,10 @@ footer div {
   border-radius: 5px;
   text-align: center;
 }
-
 .ofertasMarco:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   cursor: pointer;
 }
-
 @media (min-width: 768px) {
   .ofertasMarco {
     width: fit-content;
@@ -371,14 +340,12 @@ footer div {
     gap: 2rem;
   }
 }
-
 @media (min-width: 768px) {
   .ofertasMarco img {
     max-width: 200px;
     max-height: 200px;
   }
 }
-
 @media (min-width: 768px) {
   .ofertasConImg {
     display: grid;
@@ -386,13 +353,11 @@ footer div {
     gap: 0.5rem;
   }
 }
-
 @media (min-width: 1200px) {
   .ofertasConImg {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
-
 @media (min-width: 1600px) {
   .ofertasConImg {
     grid-template-columns: repeat(6, 1fr);
@@ -407,11 +372,16 @@ footer div {
   display: flex;
   flex-direction: column;
 }
-
 .tiendafisica iframe {
   max-width: 400px;
   max-height: 100%;
   margin: 0 auto;
+}
+.tiendafisica p {
+  line-height: 1rem;
+}
+.tiendafisica h2 {
+  text-align: center;
 }
 
 .tiendafisica h2,
@@ -431,14 +401,15 @@ footer div {
   display: flex;
   flex-direction: column;
 }
-
 .sobrenosotros h2 {
   padding: 1rem;
   margin-top: 1rem;
 }
-
 .sobrenosotros img {
   align-self: center;
+}
+.sobrenosotros p {
+  line-height: 2rem;
 }
 
 .contacto {
@@ -447,12 +418,10 @@ footer div {
   margin: 2rem;
   padding: 0.5rem;
 }
-
 .contacto img {
   max-width: 48px;
   max-height: 48px;
 }
-
 .contacto p {
   font-size: medium;
 }
